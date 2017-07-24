@@ -1,0 +1,77 @@
+<div class="wrapper">
+	<div class="box">
+		<div class="row row-offcanvas row-offcanvas-left">
+			<!-- main right col -->
+			<div class="column col-sm-12 col-xs-11" id="main">
+				<div class="padding">
+					<div class="full col-sm-9">
+						<!-- content -->
+						<div class="row">
+							<!-- main col left -->
+							<div class="col-sm-5">
+								
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<p>
+										  <%= image_tag(current_user.avatar.url(:thumb)) %>
+										</p>
+										<h4><%= full_name %></h4>
+										<h5><%= @user.username %></5>
+										<p>45 Followers, <span><%= pluralize(current_user.posts.count, "Post") %></span></p>
+									</div>
+								</div>
+								
+								<div class="well">
+									<%= simple_form_for(@user_post) do |f| %>
+									<%= f.error_notification %>
+									<form class="form-horizontal" role="form">
+										<div class="form-group" style="padding:14px;">
+											<%= f.text_area :content, placeholder: "What's New.......", class: "form-control" %>
+										</div>
+										<%= f.button :submit, class: 'btn btn-primary pull-right' %>
+										<ul class="list-inline">
+											<li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+										</ul>
+									</form>
+								</div>
+								<% end %>
+							</div>
+							
+							<!-- main col right -->
+							<div class="col-sm-7">
+								<% @posts.each do |post| %>
+								<div class="panel panel-default">
+									<div class="panel-heading"><h6>Posted by <%= @user.username %></h6></div>
+									<div class="panel-body">
+										<p><%= truncate(post.content, length: 350, escape: false) %></p>
+										
+									</div>
+								</div>
+								<% end %>
+							</div>
+							
+							<div class="row">
+								<div class="col-sm-6">
+									<a href="#">Twitter</a> <small class="text-muted">|</small> <a href="#">Facebook</a> <small class="text-muted">|</small> <a href="#">Google+</a>
+								</div>
+							</div>
+							
+							<div class="row" id="footer">
+								<div class="col-sm-6">
+									
+								</div>
+								<div class="col-sm-6">
+									<p>
+										<a href="#" class="pull-right">©Proxima 2017</a>
+									</p>
+								</div>
+							</div>
+							<hr>
+						</div>
+						<!-- /main -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
