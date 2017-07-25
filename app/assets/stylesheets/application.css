@@ -27,6 +27,12 @@ html, body {
    font-size:13px;
 }
 
+.navbar-right {
+    float: right !important;
+    margin-right: -15px;
+    padding-right: 20px;
+}
+
 a {
   color:#222222;
 }
@@ -90,12 +96,19 @@ hr {
 
 .navbar-blue {
     border-width:0;
-	background-color:crimson;
+	  background-color:crimson;
     color:#ffffff;
     font-family:arial,sans-serif;
     top:0;
     position:fixed;
     width:inherit;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background: crimson;
 }
 
 .navbar-blue li > a,.navbar-toggle  {
@@ -178,11 +191,11 @@ h1,h2,h3 {
 }
 
 .btn-primary,.label-primary,.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
-	background-color:crimson;
-    color:#fffffe;
+	background-color:darkgreen;
+    color:white;
 }
 .btn-default {
-    color:#666666;
+    color:white;
     text-shadow:0 0 1px rgba(0,0,0,.3);
 }
 .form-control {

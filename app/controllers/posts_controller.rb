@@ -20,7 +20,7 @@ class PostsController < ApplicationController
 
     if @post.save
       flash[:notice] = "Post Created"
-      redirect_to @post
+      redirect_to :back
     else
       flash[:danger] = "Post not Created"
       render 'new'
@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   def update
     if @post.update(post_params)
       flash[:notice] = "Post Updates"
-      redirect_to @post
+      redirect_to :back
     else
       flash[:notice] = "Post was not updated."
       render 'edit'
@@ -39,7 +39,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to :back
   end
 
   private
@@ -48,6 +48,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:content, :user_id)
+    params.require(:post).permit(:content, :user_id, :image)
   end
 end

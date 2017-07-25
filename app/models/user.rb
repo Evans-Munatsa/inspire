@@ -8,4 +8,8 @@ class User < ApplicationRecord
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
   has_many :posts, dependent: :destroy
+
+  validates_presence_of :name
+  validates_presence_of :surname
+  validates_presence_of :username
 end
