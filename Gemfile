@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'mailboxer'
 gem 'closure_tree'
 gem 'chosen-rails'
+gem 'cloudinary'
 
 group :development, :test do
   gem 'byebug', platform: :mri

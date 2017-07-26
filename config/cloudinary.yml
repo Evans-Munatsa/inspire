@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: inspiremelord
+  api_key: '878745972934613'
+  api_secret: vJ4GnYrwotLCkmiBYHjN8_BSky4
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: inspiremelord
+  api_key: '878745972934613'
+  api_secret: vJ4GnYrwotLCkmiBYHjN8_BSky4
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: inspiremelord
+  api_key: '878745972934613'
+  api_secret: vJ4GnYrwotLCkmiBYHjN8_BSky4
+  enhance_image_tag: true
+  static_image_support: false
