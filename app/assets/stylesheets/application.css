@@ -335,6 +335,11 @@ small.text-muted {
     img { width: 100% }
 }
 
+/*image post*/
+.image-post {
+  width: 100%;
+}
+
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
   .col-sm-5 {

@@ -10,6 +10,7 @@
                   <div class="panel-heading"><h6>Posted by <%= post.user.username %> | <%=post.created_at%></h6></div>
                   <div class="panel-body">
                     <p><%= raw post.content %></p>
+                    <%= image_tag post.image.url(:medium), class: "image-post" %>
                   </div>
                 </div>
                 <% end %>
