@@ -8,9 +8,17 @@
 							<div class="col-sm-7">
 								<% @users.each do |user| %>
 								<div class="panel panel-default">
-									<li class="round-image-50 dropdown"><%= image_tag(user.avatar.url(:thumb)) %></li>
-									<div class="panel-heading"><h6><%= user.username %></h6></div>
-									<div class="panel-heading"><p><%= user.about %></p></div>
+									<div class="panel-body">
+										<p>
+										  <%= image_tag(current_user.avatar.url(:thumb)) %>
+										</p>
+										<h5>Username: <%= user.username %></5>
+										<hr>
+										<div class="about">
+										    <h5>About Me:</h5>
+											<p><%= user.about %></p>
+										</div>
+									</div>
 								</div>
 								<% end %>
 							</div>
@@ -21,3 +29,4 @@
 		</div>
 	</div>
 </div>
+
