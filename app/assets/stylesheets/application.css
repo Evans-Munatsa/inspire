@@ -343,6 +343,8 @@ small.text-muted {
   .col-sm-7 {
     width: 100%;
   }
+
+  
  }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -353,6 +355,15 @@ small.text-muted {
   .col-sm-7 {
     width: 100%;
   }
+
+  
+
+.navbar-right {
+    /* float: right !important; */
+    text-align: center;
+    margin-right: -15px;
+    padding-right: 20px;
+}
  }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -362,6 +373,13 @@ small.text-muted {
 }
 .col-sm-7 {
     width: 58.33333333%;
+}
+
+.navbar-right {
+    /* float: right !important; */
+    text-align: center;
+    margin-right: -15px;
+    padding-right: 20px;
 }
 }
 

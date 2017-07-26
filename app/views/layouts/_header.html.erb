@@ -21,20 +21,15 @@
                 <a href="/"><i class="glyphicon glyphicon-home"></i></a>
               </li>
               
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle " data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
-                <ul class="dropdown-menu">
                   <% if user_signed_in? %>
-                  <li><%= link_to "Profile", current_user %></li>
-                  <li><%= link_to "Users", users_path %></li>
-                  <li><%= link_to "Settings", edit_user_registration_path %></li>
-                  <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "links" %></li>
+                  <li><%= link_to "Profile", current_user, class:"fa fa-user" %></li>
+                  <li><%= link_to "Users", users_path, class:"fa fa-users" %></li>
+                  <li><%= link_to "Settings", edit_user_registration_path, class:"fa fa-cog" %></li>
+                  <li><%= link_to "Logout", destroy_user_session_path, method: :delete, class: "fa fa-sign-out" %></li>
                   <% else %>
-                  <li><%= link_to "SignIn", new_user_session_path, class: "links" %></li>
-                  <li><%= link_to "SignUp", new_user_registration_path, class: "links"%></li>
+                  <li><%= link_to "SignIn", new_user_session_path, class: "links", class: "fa fa-sign-in" %></li>
+                  <li><%= link_to "SignUp", new_user_registration_path, class: "fa fa-registered"%></li>
                   <% end %>
-                </ul>
-              </li>
             </ul>
           </nav>
         </div>
