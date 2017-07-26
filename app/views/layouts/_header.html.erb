@@ -14,9 +14,7 @@
           </div>
           <nav class="collapse navbar-collapse" role="navigation">
             <ul class="nav navbar-nav navbar-right">
-            <% if user_signed_in? %>
-              <li class="round-image-50 dropdown"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
-              <% end %>
+
               <li>
                 <a href="/"><i class="fa fa-home"></i></a>
               </li>
