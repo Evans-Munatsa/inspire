@@ -71,6 +71,9 @@ GEM
       cocaine
       orm_adapter (~> 0.5.0)
     climate_control (0.2.0)
+    closure_tree (6.5.0)
+      activerecord (>= 4.1.0)
+      with_advisory_lock (>= 3.0.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
@@ -332,6 +335,9 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    with_advisory_lock (3.1.0)
+      activerecord (>= 3.2)
+      thread_safe
     xpath (2.1.0)
       nokogiri (~> 1.3)
 
@@ -345,6 +351,7 @@ DEPENDENCIES
   cancancan
   chosen-rails
   ckeditor
+  closure_tree
   coffee-rails (~> 4.2)
   cucumber-rails
   database_cleaner
