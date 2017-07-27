@@ -30,6 +30,7 @@ gem 'mailboxer'
 gem 'closure_tree'
 gem 'chosen-rails'
 gem 'cloudinary'
+gem 'paperclip-cloudinary'
 
 group :development, :test do
   gem 'byebug', platform: :mri

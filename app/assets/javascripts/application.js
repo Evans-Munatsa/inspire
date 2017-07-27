@@ -15,6 +15,7 @@
 //= require twitter/bootstrap
 //= require ckeditor/init
 //= require toastr
+//= require cloudinary
 //= require turbolinks
 //= require_tree .
 
